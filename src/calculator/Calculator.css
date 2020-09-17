@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator-wrapper {
+    display: grid;
+    grid-template-rows: 92px 4px 64px 64px 64px 64px 64px;
+    grid-gap: 20px;
+    width: 320px;
+    height: 560px;
+    position: relative;
+    border-radius: 25px;
+    background: #e9e9e9;
+    box-shadow: 10px 10px 15px #c6c6c6, 
+                -10px -10px 15px #ffffff;
+}
+
+.display-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Saira', sans-serif;
+    width: 282px;
+    height: 64px;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 10px;
+    background: #e9e9e9;
+    box-shadow: inset 5px 5px 10px #c6c6c6, 
+                inset -5px -5px 10px #ffffff;
+}
+
+.lcd-display {
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 50px;
+    color: #000000;
+}
+
+.calculator-output {
+    font-family: 'Saira', sans-serif;
+    font-size: 18pt;
+    margin: 0 10px 0 auto;
+}
+
+.horizontal-rule {
+    width: 300px;
+    height: 4px;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 2px;
+    background: #e9e9e9;
+    box-shadow: 5px 5px 15px #9c9c9c, 
+                -5px -5px 15px #f0f0f0;
+}
+
+.calc-controls-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.round-button,
+.wide-button {
+    font-size: 16pt;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #f9f9f9, #d2d2d2);;
+    box-shadow: 5px 5px 15px #c6c6c6, 
+                -5px -5px 15px #ffffff;
+    outline: 0;
+}
+
+.round-button:active,
+.wide-button:active {
+    color: red;
+    font-weight: 500;
+    box-shadow: inset 5px 5px 15px #c6c6c6, 
+                inset -5px -5px 15px #ffffff;
+}
+
+.round-button {
+    border-radius: 50%;
+}
+
+.wide-button {
+    width: 134px;
+    border-radius: 20px;
+}
+
+.orange-red {
+    background: linear-gradient(145deg, #ffb79d, #e69a84);
+}
+
+.orange {
+    background: linear-gradient(145deg, #ffd99b, #e6b783);;
+}
+
+.orange-red:active {
+    background: linear-gradient(145deg, #e69a84, #ffb79d);
+}
+
+.orange:active {
+    background: linear-gradient(145deg, #e6b783, #ffd99b);;
+}
